@@ -8,8 +8,8 @@ if(typeof CCSE == 'undefined')
 }
 
 CookieAssistant.name = 'Cookie Assistant';
-CookieAssistant.version = '0.7.1';
-CookieAssistant.GameVersion = '2.043';
+CookieAssistant.version = '0.7.4';
+CookieAssistant.GameVersion = '2.052';
 
 
 CookieAssistant.launch = function()
@@ -194,11 +194,11 @@ CookieAssistant.launch = function()
 			{
 				0:
 				{
-					desc: "MP is minimum to cast / 最低限のMP",
+					desc: "满足 MP 所需条件时",
 				},
 				1:
 				{
-					desc: "MP is full / MPがフル",
+					desc: "MP 已满时",
 				}
 			},
 			spell_buff:
@@ -206,27 +206,27 @@ CookieAssistant.launch = function()
 				0:
 				{
 					count: 1,
-					desc: "Have one buff / バフが1つ",
+					desc: "有 1 个BUFF",
 				},
 				1:
 				{
 					count: 2,
-					desc: "Have two or more buffs / バフが2つ以上",
+					desc: "有 2 个或以上BUFF",
 				}
 			},
 			upgrades:
 			{
 				0:
 				{
-					desc: "All Upgrades (includes Researches) / 全てのアップグレード(研究を含む)",
+					desc: "所有升级（包含研究）",
 				},
 				1:
 				{
-					desc: "All Upgrades except Researches / 研究を除く全てのアップグレード",
+					desc: "所有升级但不包含研究",
 				},
 				2:
 				{
-					desc: `All Upgrades that don't cause "Grandmapocalypse" / ババアポカリプスが起きない全てのアップグレード`,
+					desc: `所有升级但不会导致奶奶末日的研究`,
 				},
 			},
 			buildings:
@@ -234,166 +234,166 @@ CookieAssistant.launch = function()
 				0:
 				{
 					amount: 10,
-					desc: "Buy every 10 pieces / 10個単位で購入する",
+					desc: "以 10 个为单位购买",
 				},
 				1:
 				{
 					amount: 50,
-					desc: "Buy every 50 pieces / 50個単位で購入する",
+					desc: "以 50 个为单位购买",
 				},
 				2:
 				{
 					amount: 100,
-					desc: "Buy every 100 pieces / 100個単位で購入する",
+					desc: "以 100 个为单位购买",
 				},
 			},
 			golden:
 			{
 				0:
 				{
-					desc: "Golden Cookie including Wrath Cookie / 怒りのクッキーもクリックする"
+					desc: "所有黄金饼干（包含愤怒饼干）",
 				},
 				1:
 				{
-					desc: "Ignore Wrath Cookie / 怒りのクッキーは無視する"
+					desc: "忽略愤怒饼干",
 				}
 			},
 			sell_buildings: //建物自動売却の発動条件
 			{
 				0:
 				{
-					desc: "Have one buff / バフが1つ",
+					desc: "拥有 1 个BUFF",
 				},
 				1:
 				{
-					desc: "Have two or more buffs / バフが2つ以上",
+					desc: "拥有 2 个或以上BUFF",
 				},
 				2:
 				{
-					desc: "Have click buff / クリック系のバフ",
+					desc: "拥有点击类BUFF",
 				},
 				3:
 				{
-					desc: "Have two or more buffs including click buff / クリック系を含めて2つ以上のバフ",
+					desc: "拥有 2 个或以上BUFF且包含点击类BUFF",
 				},
 				4:
 				{
-					desc: "After auto-spellcast / 自動詠唱の後",
+					desc: "自动释放魔法后",
 				},
 				5:
 				{
-					desc: "Always / 常に"
+					desc: "总是",
 				},
 				6:
 				{
-					desc: "Have three or more buffs / バフが3つ以上",
+					desc: "拥有 3 个或以上BUFF时",
 				},
 			},
 			sell_buildings_after: //建物自動売却を行った後の動作
 			{
 				0:
 				{
-					desc: "Buy back the amount sold / 売った分だけ買い戻す",
+					desc: "买回已卖出的数量",
 				},
 				1:
 				{
-					desc: "Spellcast if can, and buy back / 詠唱してから買い戻す",
+					desc: "如果可以施法则施法，然后买回已卖出的数量",
 				},
 				2:
 				{
-					desc: "Do nothing / 何もしない",
+					desc: "什么都不做",
 				},
 			},
 			wrinkler:
 			{
 				0:
 				{
-					desc: "All Type / 全てのタイプ",
+					desc: "所有种类的饼干虫",
 				},
 				1:
 				{
-					desc: "Except Shiny Wrinkler / ピカピカのシワシワ虫を除く"
+					desc: "排除闪闪发光的饼干虫",
 				},
 			},
 			bigCookie:
 			{
 				0:
 				{
-					desc: "Always / 常に",
+					desc: "总是",
 				},
 				1:
 				{
-					desc: "Have any click buff / クリック系バフ中" 
+					desc: "拥有一个点击类BUFF时",
 				},
 				2:
 				{
-					desc: "Have one buff / バフが1つ"
+					desc: "拥有 1 个BUFF时",
 				},
 				3:
 				{
-					desc: "Have two or more buffs / バフが2つ以上"
+					desc: "拥有 2 个或以上BUFF时",
 				}
 			},
 			goldenSwitch_enable:
 			{
 				0:
 				{
-					desc: "Have one buff / バフが1つ"
+					desc: "拥有 1 个BUFF时",
 				},
 				1:
 				{
-					desc: "Have two or more buffs / バフが2つ以上"
+					desc: "拥有 2 个或以上BUFF时",
 				},
 				2:
 				{
-					desc: "Have click buff / クリック系のバフ",
+					desc: "拥有点击类BUFF时",
 				},
 				3:
 				{
-					desc: "Have two or more buffs including click buff / クリック系を含めて2つ以上のバフ",
+					desc: "拥有 2 个或以上BUFF且包含点击类BUFF时",
 				},
 			},
 			goldenSwitch_disable:
 			{
 				0:
 				{
-					desc: "No buffs / バフがない"
+					desc: "无BUFF时",
 				},
 				1:
 				{
-					desc: "No click buffs / クリックバフが無いとき"
+					desc: "无点击类BUFF时",
 				},
 			},
 			season:
 			{
 				0:
 				{
-					desc: "None / なし",
+					desc: "无季节",
 					season: "",
 				},
 				1:
 				{
-					desc: "Christmas / クリスマス",
+					desc: "圣诞节",
 					season: "christmas",
 				},
 				2:
 				{
-					desc: "Easter / イースター",
+					desc: "复活节",
 					season: "easter",
 				},
 				3:
 				{
-					desc: "Halloween / ハロウィン",
+					desc: "万圣节",
 					season: "halloween",
 				},
 				4:
 				{
-					desc: "Valentines / バレンタイン",
+					desc: "情人节",
 					season: "valentines",
 				},
 				5:
 				{
-					desc: "Business day / ビジネスデー",
+					desc: "公司日（愚人节）",
 					season: "fools",
 				},
 			},
@@ -1191,11 +1191,11 @@ CookieAssistant.launch = function()
 		str = m.Header('Basic Assists');
 		//大クッキークリック
 		str +=	'<div class="listing">'
-				+ m.ToggleButton(CookieAssistant.config.flags, 'autoClickBigCookie', 'CookieAssistant_autoClickBigCookieButton', 'AutoClick BigCookie ON', 'AutoClick BigCookie OFF', "CookieAssistant.Toggle")
-				+ '<label>Interval(ms) : </label>'
+				+ m.ToggleButton(CookieAssistant.config.flags, 'autoClickBigCookie', 'CookieAssistant_autoClickBigCookieButton', '自动点击Cookie ON', '自动点击Cookie OFF', "CookieAssistant.Toggle")
+				+ '<label>间隔（毫秒）: </label>'
 				+ m.InputBox("CookieAssistant_Interval_autoClickBigCookie", 40, CookieAssistant.config.intervals.autoClickBigCookie, "CookieAssistant.ChangeInterval('autoClickBigCookie', this.value)")
 					+ '<label></label><a class="option" ' + Game.clickStr + '=" CookieAssistant.config.particular.bigCookie.isMute++; if(CookieAssistant.config.particular.bigCookie.isMute >= 2){CookieAssistant.config.particular.bigCookie.isMute = 0;} Game.UpdateMenu(); PlaySound(\'snd/tick.mp3\');">'
-							+ (CookieAssistant.config.particular.bigCookie.isMute ? 'Mute Click SE' : 'Play Click SE')
+							+ (CookieAssistant.config.particular.bigCookie.isMute ? '静音点击音效' : '播放点击音效')
 					+ '</a><br />'
 				+ '<div class="listing">'
 					+ '<label>MODE : </label>'
@@ -1205,8 +1205,8 @@ CookieAssistant.launch = function()
 				+ '</div>'
 				+ '</div>';
 		//黄金クッキークリック
-		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoClickGoldenCookie', 'CookieAssistant_autoClickGoldenCookieButton', 'AutoClick ' + loc("Golden cookie") + ' ON', 'AutoClick ' + loc("Golden cookie") + ' OFF', "CookieAssistant.Toggle")
-				+ '<label>Interval(ms) : </label>'
+		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoClickGoldenCookie', 'CookieAssistant_autoClickGoldenCookieButton', '自动点击 ' + loc("Golden cookie") + ' ON', '自动点击 ' + loc("Golden cookie") + ' OFF', "CookieAssistant.Toggle")
+				+ '<label>间隔（毫秒）: </label>'
 				+ m.InputBox("CookieAssistant_Interval_autoClickBigCookie", 40, CookieAssistant.config.intervals.autoClickGoldenCookie, "CookieAssistant.ChangeInterval('autoClickGoldenCookie', this.value)")
 				+ '<div class="listing">'
 					+ '<label>MODE : </label>'
@@ -1216,8 +1216,8 @@ CookieAssistant.launch = function()
 				+ '</div>'
 				+ '</div>';
 		//虫撃破
-		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoClickWrinklers', 'CookieAssistant_autoClickWrinklers', 'AutoClick ' + loc("wrinkler") + ' ON', 'AutoClick ' + loc("wrinkler") + ' OFF', "CookieAssistant.Toggle")
-				+ '<label>Interval(ms) : </label>'
+		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoClickWrinklers', 'CookieAssistant_autoClickWrinklers', '自动点击 ' + loc("wrinkler") + ' ON', '自动点击 ' + loc("wrinkler") + ' OFF', "CookieAssistant.Toggle")
+				+ '<label>间隔（毫秒）: </label>'
 				+ m.InputBox("CookieAssistant_Interval_autoClickWrinklers", 40, CookieAssistant.config.intervals.autoClickWrinklers, "CookieAssistant.ChangeInterval('autoClickWrinklers', this.value)")
 				+ '<div class="listing">'
 							+ '<label>MODE : </label>'
@@ -1227,10 +1227,10 @@ CookieAssistant.launch = function()
 						+ '</div>'
 				+ '</div>';
 		//トナカイクリック
-		str +=  '<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoClickReindeer', 'CookieAssistant_autoClickReindeerButton', 'AutoClick ' + loc("Reindeer") + ' ON', 'AutoClick ' + loc("Reindeer") + ' OFF', "CookieAssistant.Toggle");
+		str +=  '<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoClickReindeer', 'CookieAssistant_autoClickReindeerButton', '自动点击 ' + loc("Reindeer") + ' ON', '自动点击 ' + loc("Reindeer") + ' OFF', "CookieAssistant.Toggle");
 				if (CookieAssistant.showAllIntervals)
 				{
-					str += '<label>Interval(ms) : </label>'
+					str += '<label>间隔（毫秒）: </label>'
 						+ m.InputBox("CookieAssistant_Interval_autoClickReindeer", 40, CookieAssistant.config.intervals.autoClickReindeer, "CookieAssistant.ChangeInterval('autoClickReindeer', this.value)");
 				}
 		str +=	'</div>';
@@ -1238,55 +1238,54 @@ CookieAssistant.launch = function()
 		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoClickFortuneNews', 'CookieAssistant_autoClickFortuneNewsButton', 'AutoClick FortuneNews ON', 'AutoClick FortuneNews OFF', "CookieAssistant.Toggle");
 				if (CookieAssistant.showAllIntervals)
 				{
-					str += '<label>Interval(ms) : </label>'
+					str += '<label>间隔（毫秒）: </label>'
 						+ m.InputBox("CookieAssistant_Interval_autoClickFortuneNews", 40, CookieAssistant.config.intervals.autoClickFortuneNews, "CookieAssistant.ChangeInterval('autoClickFortuneNews', this.value)");
 				}
 		str +=	'</div>';
 		//ElderPedge自動購入
-		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoBuyElderPledge', 'CookieAssistant_autoBuyElderPledge', 'AutoBuy ' + loc("[Upgrade name 74]Elder Pledge") + ' ON', 'AutoBuy ' + loc("[Upgrade name 74]Elder Pledge") + ' OFF', "CookieAssistant.Toggle");
+		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoBuyElderPledge', 'CookieAssistant_autoBuyElderPledge', '自动购买 ' + loc("[Upgrade name 74]Elder Pledge") + ' ON', '自动购买 ' + loc("[Upgrade name 74]Elder Pledge") + ' OFF', "CookieAssistant.Toggle");
 				if (CookieAssistant.showAllIntervals)
 				{
-					str += '<label>Interval(ms) : </label>'
+					str += '<label>间隔（毫秒）: </label>'
 						+ m.InputBox("CookieAssistant_Interval_autoBuyElderPledge", 40, CookieAssistant.config.intervals.autoBuyElderPledge, "CookieAssistant.ChangeInterval('autoBuyElderPledge', this.value)");
 				}
 		str +=	'<div class="listing">'
-					+ '<label>※この機能はアップグレードの生贄用めん棒も自動で購入するようになります。</label><br />'
-					+ '<label>This feature will also automatically purchase "Sacrificial rolling pins".</label><br />'
+					+ '<label>※该功能还将自动购买 "献祭擀面杖"。</label><br />'
 				+ '</div>'
 				+ '</div>';
 		//アップグレード自動購入
-		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoBuyUpgrades', 'CookieAssistant_autoBuyUpgrades', 'AutoBuy ' + loc("upgrade") + ' ON', 'AutoBuy ' + loc("upgrade") + ' OFF', "CookieAssistant.Toggle");
+		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoBuyUpgrades', 'CookieAssistant_autoBuyUpgrades', '自动购买 ' + loc("upgrade") + ' ON', '自动购买 ' + loc("upgrade") + ' OFF', "CookieAssistant.Toggle");
 				if (CookieAssistant.showAllIntervals)
 				{
-					str += '<label>Interval(ms) : </label>'
+					str += '<label>间隔（毫秒）: </label>'
 						+ m.InputBox("CookieAssistant_Interval_autoBuyUpgrades", 40, CookieAssistant.config.intervals.autoBuyUpgrades, "CookieAssistant.ChangeInterval('autoBuyUpgrades', this.value)");
 				}
 		str +=	'<div class="listing">'
-					+ '<label>MODE : </label>'
+					+ '<label>模式 : </label>'
 					+ '<a class="option" ' + Game.clickStr + '=" CookieAssistant.config.particular.upgrades.mode++; if(CookieAssistant.config.particular.upgrades.mode >= Object.keys(CookieAssistant.modes.upgrades).length){CookieAssistant.config.particular.upgrades.mode = 0;} Game.UpdateMenu(); PlaySound(\'snd/tick.mp3\');">'
 							+ CookieAssistant.modes.upgrades[CookieAssistant.config.particular.upgrades.mode].desc
 					+ '</a><br />'
 				+ '</div>'
 				+ '</div>';
 		//建物自動購入
-		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoBuyBuildings', 'CookieAssistant_autoBuyBuildings', 'AutoBuy ' + loc("building") + ' ON', 'AutoBuy ' + loc("building") + ' OFF', "CookieAssistant.Toggle");
+		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoBuyBuildings', 'CookieAssistant_autoBuyBuildings', '自动购买 ' + loc("building") + ' ON', '自动购买 ' + loc("building") + ' OFF', "CookieAssistant.Toggle");
 				if (CookieAssistant.showAllIntervals)
 				{
-					str += '<label>Interval(ms) : </label>'
+					str += '<label>间隔（毫秒）: </label>'
 						+ m.InputBox("CookieAssistant_Interval_autoBuyBuildings", 40, CookieAssistant.config.intervals.autoBuyBuildings, "CookieAssistant.ChangeInterval('autoBuyBuildings', this.value)");
 				}
 		str +=	'<div class="listing">'
-					+ '<label>MODE : </label>'
+					+ '<label>模式 : </label>'
 					+ '<a class="option" ' + Game.clickStr + '=" CookieAssistant.config.particular.buildings.mode++; if(CookieAssistant.config.particular.buildings.mode >= Object.keys(CookieAssistant.modes.buildings).length){CookieAssistant.config.particular.buildings.mode = 0;} Game.UpdateMenu(); PlaySound(\'snd/tick.mp3\');">'
 							+ CookieAssistant.modes.buildings[CookieAssistant.config.particular.buildings.mode].desc
 					+ '</a><br />'
 				+ '</div>'
 				+ '</div>';
 		//砂糖玉自動収穫
-		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoHarvestSugarlump', 'CookieAssistant_autoHarvestSugarlump', 'AutoHarvest ' + loc("sugar lump") + ' ON', 'AutoHarvest ' + loc("sugar lump") + ' OFF', "CookieAssistant.Toggle");
+		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoHarvestSugarlump', 'CookieAssistant_autoHarvestSugarlump', '自动收获 ' + loc("sugar lump") + ' ON', '自动收获 ' + loc("sugar lump") + ' OFF', "CookieAssistant.Toggle");
 				if (CookieAssistant.showAllIntervals)
 				{
-					str += '<label>Interval(ms) : </label>'
+					str += '<label>间隔（毫秒）: </label>'
 						+ m.InputBox("CookieAssistant_Interval_autoHarvestSugarlump", 40, CookieAssistant.config.intervals.autoHarvestSugarlump, "CookieAssistant.ChangeInterval('autoHarvestSugarlump', this.value)");
 				}
 		str +=	'</div>';
@@ -1295,18 +1294,18 @@ CookieAssistant.launch = function()
 		str += m.Header('Advanced Assists');
 
 		//自動詠唱
-		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoSpellonBuff', 'CookieAssistant_autoSpellonBuff', 'AutoSpellCast ' + loc("Force the Hand of Fate") + ' ON', 'AutoSpellCast ' + loc("Force the Hand of Fate") + ' OFF', "CookieAssistant.Toggle");
+		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoSpellonBuff', 'CookieAssistant_autoSpellonBuff', '自动释放法术 ' + loc("Force the Hand of Fate") + ' ON', '自动释放法术 ' + loc("Force the Hand of Fate") + ' OFF', "CookieAssistant.Toggle");
 				if (CookieAssistant.showAllIntervals)
 				{
-					str += '<label>Interval(ms) : </label>'
+					str += '<label>间隔（毫秒）: </label>'
 						+ m.InputBox("CookieAssistant_Interval_autoSpellonBuff", 40, CookieAssistant.config.intervals.autoSpellonBuff, "CookieAssistant.ChangeInterval('autoSpellonBuff', this.value)");
 				}
 		str +=	'<div class="listing">'
-					+ '<label>MODE : </label>'
+					+ '<label>释放条件 : </label>'
 					+ '<a class="option" ' + Game.clickStr + '=" CookieAssistant.config.particular.spell.mode++; if(CookieAssistant.config.particular.spell.mode >= Object.keys(CookieAssistant.modes.spell).length){CookieAssistant.config.particular.spell.mode = 0;} Game.UpdateMenu(); PlaySound(\'snd/tick.mp3\');">'
 							+ CookieAssistant.modes.spell[CookieAssistant.config.particular.spell.mode].desc
 					+ '</a>'
-					+ '<label> AND </label>'
+					+ '<label> 和 </label>'
 					+ '<a class="option" ' + Game.clickStr + '=" CookieAssistant.config.particular.spell.mode2++; if(CookieAssistant.config.particular.spell.mode2 >= Object.keys(CookieAssistant.modes.spell_buff).length){CookieAssistant.config.particular.spell.mode2 = 0;} Game.UpdateMenu(); PlaySound(\'snd/tick.mp3\');">'
 							+ CookieAssistant.modes.spell_buff[CookieAssistant.config.particular.spell.mode2].desc
 					+ '</a>'
@@ -1317,34 +1316,33 @@ CookieAssistant.launch = function()
 		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoSwitchSeason', 'CookieAssistant_autoSwitchSeason', 'AutoSwitch Seasons ON', 'AutoSwitch Seasons OFF', "CookieAssistant.Toggle");
 				if (CookieAssistant.showAllIntervals)
 				{
-					str +='<label>Interval(ms) : </label>'
+					str +='<label>间隔（毫秒）: </label>'
 						+ m.InputBox("CookieAssistant_Interval_autoSwitchSeason", 40, CookieAssistant.config.intervals.autoSwitchSeason, "CookieAssistant.ChangeInterval('autoSwitchSeason', this.value)");
 				}
 		str +=	'<div class="listing">'
-				+ '<label>Switch to after complete / 完了後の切り替え先 : </label>'
+				+ '<label>当全部季节升级完后切换到 : </label>'
 				+ '<a class="option" ' + Game.clickStr + '=" CookieAssistant.config.particular.season.afterComplete++; if(CookieAssistant.config.particular.season.afterComplete >= Object.keys(CookieAssistant.modes.season).length){CookieAssistant.config.particular.season.afterComplete = 0;} Game.UpdateMenu(); PlaySound(\'snd/tick.mp3\');">'
 						+ CookieAssistant.modes.season[CookieAssistant.config.particular.season.afterComplete].desc
 				+ '</a><br />'
 				+ '</div>'
 		str +=	'<div class="listing">'
-					+ '<label>アップグレードが残っているシーズンに自動的に切り替えます。</label><br />'
-					+ '<label>Automatically switch to seasons in which the upgrade is still remained. </label><br />'
+					+ '<label>自动切换到未完成升级的季节。</label><br />'
 				+ '</div>'
 				+ '</div>';
 
 		//ドラゴン自動育成
-		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoTrainDragon', 'CookieAssistant_autoTrainDragon', 'AutoTrain Dragon ON', 'AutoTrain Dragon OFF', "CookieAssistant.Toggle");
+		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoTrainDragon', 'CookieAssistant_autoTrainDragon', '自动训练龙 ON', '自动训练龙 OFF', "CookieAssistant.Toggle");
 				if (CookieAssistant.showAllIntervals)
 				{
-					str += '<label>Interval(ms) : </label>'
+					str += '<label>间隔（毫秒）: </label>'
 						+ m.InputBox("CookieAssistant_Interval_autoTrainDragon", 40, CookieAssistant.config.intervals.autoTrainDragon, "CookieAssistant.ChangeInterval('autoTrainDragon', this.value)");
 				}
 		str +=	'<div class="listing">'
-					+ '<label>Aura1 : </label>'
+					+ '<label>光环1 : </label>'
 						+ '<a class="option" ' + Game.clickStr + '=" CookieAssistant.config.particular.dragon.aura1++; if(CookieAssistant.config.particular.dragon.aura1 >= Object.keys(Game.dragonAuras).length){CookieAssistant.config.particular.dragon.aura1 = 0;} Game.UpdateMenu(); PlaySound(\'snd/tick.mp3\');">'
 							+ Game.dragonAuras[CookieAssistant.config.particular.dragon.aura1].dname
 						+ '</a>'
-					+ '<label>      Aura2 : </label>'
+					+ '<label>      光环2 : </label>'
 						+ '<a class="option" ' + Game.clickStr + '=" CookieAssistant.config.particular.dragon.aura2++; if(CookieAssistant.config.particular.dragon.aura2 >= Object.keys(Game.dragonAuras).length){CookieAssistant.config.particular.dragon.aura2 = 0;} Game.UpdateMenu(); PlaySound(\'snd/tick.mp3\');">'
 							+ Game.dragonAuras[CookieAssistant.config.particular.dragon.aura2].dname
 						+ '</a><br />'
@@ -1352,63 +1350,62 @@ CookieAssistant.launch = function()
 				+ '</div>';
 
 		//パンテオンのスロット自動セット
-		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoSetSpirits', 'CookieAssistant_autoSetSpirits', 'AutoSet Spirits ON', 'AutoSet Spirits OFF', "CookieAssistant.Toggle");
+		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoSetSpirits', 'CookieAssistant_autoSetSpirits', '自动设置神灵 ON', '自动设置神灵 OFF', "CookieAssistant.Toggle");
 				if (CookieAssistant.showAllIntervals)
 				{
-					str += '<label>Interval(ms) : </label>'
+					str += '<label>间隔（毫秒）: </label>'
 						+ m.InputBox("CookieAssistant_Interval_autoSetSpirits", 40, CookieAssistant.config.intervals.autoSetSpirits, "CookieAssistant.ChangeInterval('autoSetSpirits', this.value)");
 				}
 		str +=	'<div class="listing">';
 
 				if (Game.Objects['Temple'].minigame != undefined && Game.Objects['Temple'].minigameLoaded)
 				{
-					str +=	'<label>Diamond : </label>'
+					str +=	'<label>钻石槽 : </label>'
 							+ `<a class="option" ` + Game.clickStr + `=" CookieAssistant.config.particular.spirits.slot1++; if(CookieAssistant.config.particular.spirits.slot1 >= Object.keys(Game.Objects['Temple'].minigame.gods).length){CookieAssistant.config.particular.spirits.slot1 = 0;} Game.UpdateMenu();">`
 								+ Game.Objects['Temple'].minigame.godsById[CookieAssistant.config.particular.spirits.slot1].name
 							+ '</a>'
-							+ '<label>Ruby : </label>'
+							+ '<label>红宝石槽 : </label>'
 							+ `<a class="option" ` + Game.clickStr + `=" CookieAssistant.config.particular.spirits.slot2++; if(CookieAssistant.config.particular.spirits.slot2 >= Object.keys(Game.Objects['Temple'].minigame.gods).length){CookieAssistant.config.particular.spirits.slot2 = 0;} Game.UpdateMenu();">`
 								+ Game.Objects['Temple'].minigame.godsById[CookieAssistant.config.particular.spirits.slot2].name
 							+ '</a>'
-							+ '<label>Jade : </label>'
+							+ '<label>玉石槽 : </label>'
 							+ `<a class="option" ` + Game.clickStr + `=" CookieAssistant.config.particular.spirits.slot3++; if(CookieAssistant.config.particular.spirits.slot3 >= Object.keys(Game.Objects['Temple'].minigame.gods).length){CookieAssistant.config.particular.spirits.slot3 = 0;} Game.UpdateMenu();">`
 								+ Game.Objects['Temple'].minigame.godsById[CookieAssistant.config.particular.spirits.slot3].name
 							+ '</a>';
 				}
 				else
 				{
-					str += "<label>⚠️パンテオンがロックされています。アンロックするまでこの機能は使えません。</label><br />";
-					str += "<label>⚠️You have not unlocked the Pantheon yet. This feature will not be available until it is unlocked.</label><br />";
+					str += "<label>⚠️您尚未解锁万神殿。该功能在解锁前无法使用。</label><br />";
 				}
 		str +=	'</div></div>'
 		
 		//建物自動売却
-		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoSellBuilding', 'CookieAssistant_autoSellBuilding', 'AutoSell Buildings ON', 'AutoSell Buildings OFF', "CookieAssistant.Toggle");
-					str += '<label>Interval(ms) : </label>'
+		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoSellBuilding', 'CookieAssistant_autoSellBuilding', '自动卖出建筑物 ON', '自动卖出建筑物 OFF', "CookieAssistant.Toggle");
+					str += '<label>间隔（毫秒）: </label>'
 						+ m.InputBox("CookieAssistant_Interval_autoSellBuilding", 40, CookieAssistant.config.intervals.autoSellBuilding, "CookieAssistant.ChangeInterval('autoSellBuilding', this.value)");
 		str +=	'<div class="listing"><ol style="list-style: inside;list-style-type: decimal;">';
 				for (var i_sellconf = 0; i_sellconf < CookieAssistant.config.particular.sell.isAfterSell.length; i_sellconf++)
 				{
-					str += '<li><label>Sell </label>'
+					str += '<li><label>卖出 </label>'
 						+ '<a class="option" ' + Game.clickStr + '="CookieAssistant.config.particular.sell.target[' + i_sellconf + ']++; if(CookieAssistant.config.particular.sell.target[' + i_sellconf + '] >= Object.keys(Game.Objects).length){CookieAssistant.config.particular.sell.target[' + i_sellconf + '] = 0;} Game.UpdateMenu(); PlaySound(\'snd/tick.mp3\');">'
 							+ Game.ObjectsById[CookieAssistant.config.particular.sell.target[i_sellconf]].dname
 						+ '</a>'
-					+ '<label> for </label>'
+					+ '<label> 卖出数额： </label>'
 					+ m.InputBox("CookieAssistant_Amount_autoSellBuilding", 40, CookieAssistant.config.particular.sell.amount[i_sellconf], "CookieAssistant.config.particular.sell.amount[" + i_sellconf + "] = this.value;")
-					+ '<label>When </label>'
+					+ '<label>卖出条件： </label>'
 						+ '<a class="option" ' + Game.clickStr + '=" CookieAssistant.config.particular.sell.activate_mode[' + i_sellconf + ']++; if(CookieAssistant.config.particular.sell.activate_mode[' + i_sellconf + '] >= Object.keys(CookieAssistant.modes.sell_buildings).length){CookieAssistant.config.particular.sell.activate_mode[' + i_sellconf + '] = 0;} Game.UpdateMenu(); PlaySound(\'snd/tick.mp3\');">'
 							+ CookieAssistant.modes.sell_buildings[CookieAssistant.config.particular.sell.activate_mode[i_sellconf]].desc
 						+ '</a><br />'
-					+ '<label>Do After Activated / 発動後にやること : </label>'
+					+ '<label>完成售出后的操作 : </label>'
 						+ '<a class="option" ' + Game.clickStr + '=" CookieAssistant.config.particular.sell.after_mode[' + i_sellconf + ']++; if(CookieAssistant.config.particular.sell.after_mode[' + i_sellconf + '] >= Object.keys(CookieAssistant.modes.sell_buildings_after).length){CookieAssistant.config.particular.sell.after_mode[' + i_sellconf + '] = 0;} Game.UpdateMenu(); PlaySound(\'snd/tick.mp3\');">'
 							+ CookieAssistant.modes.sell_buildings_after[CookieAssistant.config.particular.sell.after_mode[i_sellconf]].desc
 						+ '</a><br /></li>';
 				}
 		str +=	'</ol>';
-		str +=	'<a class="option" ' + Game.clickStr + '="CookieAssistant.addSellConfig(); Game.UpdateMenu(); PlaySound(\'snd/tick.mp3\');">Add Config</a>';
+		str +=	'<a class="option" ' + Game.clickStr + '="CookieAssistant.addSellConfig(); Game.UpdateMenu(); PlaySound(\'snd/tick.mp3\');">添加配置</a>';
 		if (CookieAssistant.config.particular.sell.isAfterSell.length > 0)
 		{
-			str +=	'<a class="option" ' + Game.clickStr + '="CookieAssistant.removeSellConfig(); Game.UpdateMenu(); PlaySound(\'snd/tick.mp3\');">Remove Last</a>';
+			str +=	'<a class="option" ' + Game.clickStr + '="CookieAssistant.removeSellConfig(); Game.UpdateMenu(); PlaySound(\'snd/tick.mp3\');">删除最后一个配置</a>';
 		}
 		str +=	'</div></div>';
 				
@@ -1417,19 +1414,18 @@ CookieAssistant.launch = function()
 			var temple = Game.Objects['Temple'].minigame;
 			if (temple == undefined || !Game.Objects['Temple'].minigameLoaded || !temple.slot.includes(2))
 			{
-				str += "<label><b style='color: #ff3705'>⚠️ゴジャモックがセットされていないため、有効化しても恩恵が無い可能性があります。</b></label><br />";
-				str += "<label><b style='color: #ff3705'>⚠️Godzamok is not set, so there may be no benefit from enabling this.</b></label><br />";
+				str += "<label><b style='color: #ff3705'>⚠️万神殿神灵未设置，因此启用此功能可能没有任何好处。</b></label><br />";
 			}
 		}
 
 		//ゴールデンスイッチ自動切換え
-		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoToggleGoldenSwitch', 'CookieAssistant_autoToggleGoldenSwitch', 'AutoToggle ' + loc("[Upgrade name 327]Golden switch") + ' ON', 'AutoToggle ' + loc("[Upgrade name 327]Golden switch") + ' OFF', "CookieAssistant.Toggle")
+		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoToggleGoldenSwitch', 'CookieAssistant_autoToggleGoldenSwitch', '自动切换 ' + loc("[Upgrade name 327]Golden switch") + ' ON', '自动切换 ' + loc("[Upgrade name 327]Golden switch") + ' OFF', "CookieAssistant.Toggle")
 			+ '<div class="listing">'
-				+ '<label>Enable When : </label>'
+				+ '<label>开启条件 : </label>'
 				+ '<a class="option" ' + Game.clickStr + '=" CookieAssistant.config.particular.goldenSwitch.enable++; if(CookieAssistant.config.particular.goldenSwitch.enable >= Object.keys(CookieAssistant.modes.goldenSwitch_enable).length){CookieAssistant.config.particular.goldenSwitch.enable = 0;} Game.UpdateMenu(); PlaySound(\'snd/tick.mp3\');">'
 						+ CookieAssistant.modes.goldenSwitch_enable[CookieAssistant.config.particular.goldenSwitch.enable].desc
 				+ '</a><br />'
-				+ '<label>Disable When : </label>'
+				+ '<label>关闭条件 : </label>'
 				+ '<a class="option" ' + Game.clickStr + '=" CookieAssistant.config.particular.goldenSwitch.disable++; if(CookieAssistant.config.particular.goldenSwitch.disable >= Object.keys(CookieAssistant.modes.goldenSwitch_disable).length){CookieAssistant.config.particular.goldenSwitch.disable = 0;} Game.UpdateMenu(); PlaySound(\'snd/tick.mp3\');">'
 						+ CookieAssistant.modes.goldenSwitch_disable[CookieAssistant.config.particular.goldenSwitch.disable].desc
 				+ '</a><br />'
@@ -1437,28 +1433,28 @@ CookieAssistant.launch = function()
 			+ '</div>';
 
 		//ブローカー自動雇用
-		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoHireBrokers', 'CookieAssistant_autoHireBrokers', 'AutoHire Brokers ON', 'AutoHire Brokers OFF', "CookieAssistant.Toggle");
+		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoHireBrokers', 'CookieAssistant_autoHireBrokers', '自动雇用经纪人 ON', '自动雇用经纪人 OFF', "CookieAssistant.Toggle");
 		if (CookieAssistant.showAllIntervals)
 		{
-			str += '<label>Interval(ms) : </label>'
+			str += '<label>间隔（毫秒）: </label>'
 				+ m.InputBox("CookieAssistant_Interval_autoHireBrokers", 40, CookieAssistant.config.intervals.autoHireBrokers, "CookieAssistant.ChangeInterval('autoHireBrokers', this.value)");
 		}
 		str += '</div>';
 
 		str += "<br />"
-		str += m.Header('Special Assists');
+		str += m.Header('特殊配置');
 
 		//ChocolateEgg
-		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoChocolateEgg', 'CookieAssistant_autoChocolateEgg', 'Auto Buy ' + loc("[Upgrade name 227]Chocolate egg") + ' ON', 'AutoToggle ' + loc("[Upgrade name 227]Chocolate egg") + ' OFF', "CookieAssistant.Toggle")
+		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoChocolateEgg', 'CookieAssistant_autoChocolateEgg', '自动购买 ' + loc("[Upgrade name 227]Chocolate egg") + ' ON', '自动切换 ' + loc("[Upgrade name 227]Chocolate egg") + ' OFF', "CookieAssistant.Toggle")
 			+ '</div>';
 
 		str += "<br />"
-		str += m.Header('Misc');
+		str += m.Header('杂项');
 		str += '<div class="listing">'
-				+ m.ActionButton("CookieAssistant.showAllIntervals = !CookieAssistant.showAllIntervals; Game.UpdateMenu();", (CookieAssistant.showAllIntervals ? 'Hide' : 'Show All') + ' Interval Settings')
-				+ m.ActionButton("CookieAssistant.restoreDefaultConfig(2); CookieAssistant.DoAction(); Game.UpdateMenu();", 'Restore Default')
-				+ m.ActionButton("CookieAssistant.CheckUpdate();", 'Check Update')
-				+ m.ActionButton("Steam.openLink('https://steamcommunity.com/sharedfiles/filedetails/?id=2596469882');", 'Get more information')
+				+ m.ActionButton("CookieAssistant.showAllIntervals = !CookieAssistant.showAllIntervals; Game.UpdateMenu();", (CookieAssistant.showAllIntervals ? '隐藏' : '显示所有') + ' 点击间隔设置')
+				+ m.ActionButton("CookieAssistant.restoreDefaultConfig(2); CookieAssistant.DoAction(); Game.UpdateMenu();", '重置配置')
+				+ m.ActionButton("CookieAssistant.CheckUpdate();", '检查更新')
+				+ m.ActionButton("Steam.openLink('https://steamcommunity.com/sharedfiles/filedetails/?id=2596469882');", '获取更多信息')
 				+ '<label>Version : ' + CookieAssistant.version + '</label>'
 			+ '</div>';
 
@@ -1567,7 +1563,7 @@ CookieAssistant.launch = function()
 
 	CookieAssistant.CheckUpdate = async function()
 	{
-		var res = await fetch("https://api.github.com/repos/hitsub/CookieAssistant/releases/latest")
+		var res = await fetch("https://api.github.com/repos/PianCat/CookieAssistant/releases/latest")
 		var json = await res.json()
 
 		if(json.tag_name == CookieAssistant.version)
