@@ -1198,7 +1198,7 @@ CookieAssistant.launch = function()
 							+ (CookieAssistant.config.particular.bigCookie.isMute ? '静音点击音效' : '播放点击音效')
 					+ '</a><br />'
 				+ '<div class="listing">'
-					+ '<label>MODE : </label>'
+					+ '<label>模式 : </label>'
 					+ '<a class="option" ' + Game.clickStr + '=" CookieAssistant.config.particular.bigCookie.mode++; if(CookieAssistant.config.particular.bigCookie.mode >= Object.keys(CookieAssistant.modes.bigCookie).length){CookieAssistant.config.particular.bigCookie.mode = 0;} Game.UpdateMenu(); PlaySound(\'snd/tick.mp3\');">'
 							+ CookieAssistant.modes.bigCookie[CookieAssistant.config.particular.bigCookie.mode].desc
 					+ '</a><br />'
@@ -1209,7 +1209,7 @@ CookieAssistant.launch = function()
 				+ '<label>间隔（毫秒）: </label>'
 				+ m.InputBox("CookieAssistant_Interval_autoClickBigCookie", 40, CookieAssistant.config.intervals.autoClickGoldenCookie, "CookieAssistant.ChangeInterval('autoClickGoldenCookie', this.value)")
 				+ '<div class="listing">'
-					+ '<label>MODE : </label>'
+					+ '<label>模式 : </label>'
 					+ '<a class="option" ' + Game.clickStr + '=" CookieAssistant.config.particular.golden.mode++; if(CookieAssistant.config.particular.golden.mode >= Object.keys(CookieAssistant.modes.golden).length){CookieAssistant.config.particular.golden.mode = 0;} Game.UpdateMenu(); PlaySound(\'snd/tick.mp3\');">'
 							+ CookieAssistant.modes.golden[CookieAssistant.config.particular.golden.mode].desc
 					+ '</a><br />'
@@ -1220,7 +1220,7 @@ CookieAssistant.launch = function()
 				+ '<label>间隔（毫秒）: </label>'
 				+ m.InputBox("CookieAssistant_Interval_autoClickWrinklers", 40, CookieAssistant.config.intervals.autoClickWrinklers, "CookieAssistant.ChangeInterval('autoClickWrinklers', this.value)")
 				+ '<div class="listing">'
-							+ '<label>MODE : </label>'
+							+ '<label>模式 : </label>'
 							+ '<a class="option" ' + Game.clickStr + '=" CookieAssistant.config.particular.wrinkler.mode++; if(CookieAssistant.config.particular.wrinkler.mode >= Object.keys(CookieAssistant.modes.wrinkler).length){CookieAssistant.config.particular.wrinkler.mode = 0;} Game.UpdateMenu(); PlaySound(\'snd/tick.mp3\');">'
 									+ CookieAssistant.modes.wrinkler[CookieAssistant.config.particular.wrinkler.mode].desc
 							+ '</a><br />'
