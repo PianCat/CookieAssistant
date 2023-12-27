@@ -8,7 +8,7 @@ if(typeof CCSE == 'undefined')
 }
 
 CookieAssistant.name = 'Cookie Assistant';
-CookieAssistant.version = '0.7.4';
+CookieAssistant.version = '0.7.5';
 CookieAssistant.GameVersion = '2.052';
 
 
@@ -1556,8 +1556,8 @@ CookieAssistant.launch = function()
 		else if (lastVersion != CookieAssistant.version)
 		{
 			Game.Notify(CookieAssistant.name,
-				loc("It's been updated.") + " : " + lastVersion + " => " + CookieAssistant.version + "<br>"
-				+ `<a ${Game.clickStr}="Steam.openLink('https://github.com/hitsub/CookieAssistant/releases/latest')" target="_brank">` + loc("You can check the patch notes from here.") + `</a>`);
+				loc("已是最新版") + " : " + lastVersion + " => " + CookieAssistant.version + "<br>"
+				+ `<a ${Game.clickStr}="Steam.openLink('https://github.com/PianCat/CookieAssistant/releases/latest')" target="_brank">` + loc("您可以从这里查看更新说明。") + `</a>`);
 		}
 	}
 
@@ -1568,11 +1568,11 @@ CookieAssistant.launch = function()
 
 		if(json.tag_name == CookieAssistant.version)
 		{
-			Game.Notify(CookieAssistant.name, '最新版です<br>This is the latest version', "", 3)
+			Game.Notify(CookieAssistant.name, '已是最新版', "", 3)
 			return;
 		}
 
-		Game.Notify(CookieAssistant.name, `<b style="color: #ff8000">` + loc("There will be an update.")  + `</b><br><a ${Game.clickStr}="Steam.openLink('${json.assets[0].browser_download_url}')" target="_brank">` + loc("Download Here.") + `</a>`)
+		Game.Notify(CookieAssistant.name, `<b style="color: #ff8000">` + loc("检查到更新。")  + `</b><br><a ${Game.clickStr}="Steam.openLink('${json.assets[0].browser_download_url}')" target="_brank">` + loc("在此处下载。") + `</a>`)
 		Game.UpdateMenu();
 	}
 
