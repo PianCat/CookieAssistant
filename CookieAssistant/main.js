@@ -1235,7 +1235,7 @@ CookieAssistant.launch = function()
 				}
 		str +=	'</div>';
 		//FortuneNewsクリック
-		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoClickFortuneNews', 'CookieAssistant_autoClickFortuneNewsButton', 'AutoClick FortuneNews ON', 'AutoClick FortuneNews OFF', "CookieAssistant.Toggle");
+		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoClickFortuneNews', 'CookieAssistant_autoClickFortuneNewsButton', '自动点击幸运新闻 ON', '自动点击幸运新闻 OFF', "CookieAssistant.Toggle");
 				if (CookieAssistant.showAllIntervals)
 				{
 					str += '<label>间隔（毫秒）: </label>'
@@ -1313,7 +1313,7 @@ CookieAssistant.launch = function()
 				+ '</div>';
 		
 		//シーズン自動切換え
-		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoSwitchSeason', 'CookieAssistant_autoSwitchSeason', 'AutoSwitch Seasons ON', 'AutoSwitch Seasons OFF', "CookieAssistant.Toggle");
+		str +=	'<div class="listing">' + m.ToggleButton(CookieAssistant.config.flags, 'autoSwitchSeason', 'CookieAssistant_autoSwitchSeason', '自动切换节日 ON', '自动切换节日 OFF', "CookieAssistant.Toggle");
 				if (CookieAssistant.showAllIntervals)
 				{
 					str +='<label>间隔（毫秒）: </label>'
