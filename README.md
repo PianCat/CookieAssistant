@@ -1,88 +1,51 @@
 # CookieAssistant
-Assist tool for Cookie Clicker Steam Edition.  
-Does not support direct rewriting of values or giving items.
-
-Steam版クッキークリッカーのアシストツールです。  
-値の直接書き換えやアイテムの付与といったことには対応しません。
+Cookie Clicker Steam版辅助工具。
+不支持直接修改数值或赠送物品。
 
 ![0 7 0-english](https://user-images.githubusercontent.com/5540614/135812016-51f74abb-c217-4d91-bceb-46658dd390fa.png)
 
-# 機能 / Features
+# 功能 / Features
 
-- EN
-  - Auto click Big Cookie
-  - Auto click Golden Cookie
-  - Auto click Reindeer
-  - Auto click Fortune News
-  - Auto spellcasting 'Hand of Fate' during any buff
-  - Auto destroy Wrinklers
-  - Auto purchase Elder Pledge
-    - The "Sacrificial rolling pins" will also be purchased automatically.
-  - Auto buy Upgrades
-  - Auto switch to seasons with remaining upgrades
-    - Upgrades of Santa will also be done automatically.
-    - If "ElderPledge" or "ElderCovenant" is valid on Halloween, "Revoke Elder Covenant" will be purchased automatically.
-    - If feature "Auto purchase ElderPledge" is enabled on Halloween, it will be automatically disabled.
-    - By using this function together with "Auto click GoldenCookie", "Auto buy Upgrades" and "Auto destroy Wrinklers", you can fully automate the acquisition of all upgrades of seasons.
-  - Auto buy buildings
-    - If "Auto train Dragon" feature turned on, this feature purchases up to 350 buildings until they are fully trained.
-  - Auto harvest Sugar Lumps
-  - Auto set spirits to slots in the pantheon
-    - Spirit Set will only be performed when the Pantheon slot is empty.
-    - Spirit sets are a regular procedure and will not be performed during the cool time.
-  - Auto train dragon and set auras
-    - Auras are set only when the dragon is fully grown.
-    - This feature automatically will pet the dragon to get upgrades.
-  - Auto-toggle Golden Switch feature
-  - Auto hire brokers feature
-    - Office upgrades are also automatic.
-  - Auto buy chocolate egg feature
-    - Just before ascend, set the aura "Earth Shatterer", sell all buildings, and then buy Chocolate egg.
-    - When enabled, auto-switch seasons and auto-buy upgrades will ignore the chocolate egg.
-  - Setting the interval for the above features
-  - Check update this mod
-- JP
-  - 大クッキーの自動クリック
-  - 黄金クッキーの自動クリック
-  - トナカイの自動クリック
-  - フォーチューンニュースの自動クリック
-  - 何らかのバフが発動しているときに自動で「運命を押し付ける」を詠唱
-  - シワシワ虫の自動撃退
-  - エルダー宣誓の自動購入
-    - 「生贄用めん棒」も自動購入するようになります
-  - アップグレードの自動購入
-  - アップグレードが終わってないシーズンへの自動切換え
-    - サンタのアップグレードも自動的に行われます
-    - ハロウィンの時にエルダー宣誓/エルダー誓約が有効であれば、自動的にエルダー誓約の撤回を行います
-    - ハロウィンの時に「エルダー宣誓の自動購入」がONになっている場合、自動的に無効化されます
-    - 「黄金クッキーの自動クリック」「アップグレードの自動購入」「シワシワ虫の自動撃退」と合わせて使うことでシーズンアップグレードの取得が完全自動で行えます
-  - 建物の自動購入
-    - ドラゴンの自動育成がONになっている場合、無駄を無くすために育成が完了するまで350以上までしか購入しなくなります
-  - 砂糖玉の自動収穫
-  - パンテオンの自動セット
-    - 精霊のセットはパンテオンのスロットが空の時にのみ行われます
-    - 精霊のセットは正規の手順のものであり、クールタイム中であれば実行されません
-  - ドラゴンの自動育成 + オーラの自動セット
-    - オーラのセットはドラゴンの育成が最大まで完了したときにのみ行われます
-    - この機能はドラゴンを自動でなでて、アップグレードを取得します
-  - 黄金スイッチの自動切換え機能
-  - ブローカーの自動雇用機能
-    - オフィスのアップグレードも自動で行われます
-  - チョコの卵の自動購入機能
-    - 転生直前にオーラ「大地を砕く者」をセットし、全建物を売却してから購入します
-    - この機能が有効のとき、シーズン自動切換やアップグレード自動購入はチョコの卵を無視するようになります
-  - これらの機能の実行間隔の設定
-  - このMODのアプデチェック
+  - 自动点击大饼干
+  - 自动点击金色饼干
+  - 自动点击驯鹿
+  - 自动点击幸运新闻
+  - 在任何增益效果期间自动施放“命运之手”
+  - 自动销毁皱褶者
+  - 自动购买长者誓言
+    - “祭品擀面杖”也将自动购买。
+  - 自动购买升级
+  - 自动切换到剩余升级的季节
+    - 圣诞老人的升级也将自动完成。
+    - 如果万圣节时“长者誓言”或“长者契约”有效，将自动购买“撤销长者契约”。
+    - 如果在万圣节时启用“自动购买长者誓言”功能，它将自动禁用。
+    - 通过与“自动点击金色饼干”、“自动购买升级”和“自动销毁皱褶者”功能结合使用，您可以完全自动化获取所有季节的升级。
+  - 自动购买建筑
+    - 如果开启“自动训练龙”功能，此功能将购买最多350座建筑，直到它们完全训练完成。
+  - 自动收获糖块
+  - 自动将神灵设置在神殿的槽位中
+    - 只有当神殿槽位为空时，才会执行神灵设置。
+    - 神灵设置是常规程序，不会在冷却时间内执行。
+  - 自动训练龙并设置光环
+    - 只有当龙完全成长后，才会设置光环。
+    - 此功能会自动抚摸龙以获得升级。
+  - 自动切换金色开关功能
+  - 自动雇佣经纪人功能
+    - 办公室升级也将自动完成。
+  - 自动购买巧克力蛋功能
+    - 在升天前，设置光环“大地破碎者”，出售所有建筑，然后购买巧克力蛋。
+    - 启用时，自动切换季节和自动购买升级将忽略巧克力蛋。
+  - 设置上述功能的间隔
+  - 检查此模组的更新
 
-# ダウンロード / Download
 
-Download [HERE](https://github.com/hitsub/CookieAssistant/releases/latest/download/CookieAssistant.zip)
+# 下载 / Download
 
-[導入手順はこちら](https://steamcommunity.com/sharedfiles/filedetails/?id=2596469882)  
-[Click here for installation instructions](https://steamcommunity.com/sharedfiles/filedetails/?id=2596469882)
+Download [HERE](https://github.com/PianCat/CookieAssistant/releases/latest)
 
-※前提MODとして[CCSE](https://klattmose.github.io/CookieClicker/)が必要です。詳しくは上記のURLから手順をご覧ください。  
-[CCSE](https://klattmose.github.io/CookieClicker/) is required as a prerequisite mod. For details, please see the instructions at the URL above.
+[安装教学](https://steamcommunity.com/sharedfiles/filedetails/?id=2596469882) 
+
+※需要[CCSE](https://klattmose.github.io/CookieClicker/)才能正常使用MOD
 
 # 今後入れる予定の機能 / Future plan
 
